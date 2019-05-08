@@ -51,7 +51,7 @@
                        navigator.msGetUserMedia);
             
             if(navigator.getUserMedia){
-                navigator.getUserMedia({video : true}, loadCam, loadFail);
+                navigator.getUserMedia({video : true, audio : true}, loadCam, loadFail);
             }
 
             // Ahora dibujamos en el canvas para transmitir 1000 ms = 1 seg.
